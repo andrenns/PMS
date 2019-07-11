@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:background="@drawable/jal" />
+
+    <Button
+        android:id="@+id/idLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:onClick="loginScreen"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button"/>
+
+
+    <Button
+        android:id="@+id/idCreate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="createScreen"
+        android:text="Create"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"/>
+    <Button
+        android:id="@+id/idGuest"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="guestScreen"
+        android:text="GUEST"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"/>
+
+
+</LinearLayout>

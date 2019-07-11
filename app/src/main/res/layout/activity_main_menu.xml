@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:drawableTop="@android:drawable/ic_menu_info_details"
+            android:onClick="info" />
+
+
+        <Button
+            android:layout_marginLeft="175dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:background="@drawable/button"
+            android:onClick="logout"
+            android:text="         Logout         "
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        >
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/button"
+            android:drawableLeft="@android:drawable/ic_lock_idle_charging"
+            android:paddingHorizontal="100dp"
+            android:text="GoPro handling"
+            android:textColor="@android:color/white"
+            android:onClick="connectActivity"/>
+
+    <Button
+        android:id="@+id/drone"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:paddingHorizontal="100dp"
+        android:text="Download Pictures"
+        android:textColor="@android:color/white"
+        android:onClick="downloadActivity"/>
+
+
+    <Button
+        android:id="@+id/galery"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@android:drawable/ic_menu_gallery"
+        android:onClick="galery"
+        android:paddingHorizontal="100dp"
+        android:text="Gallery"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:onClick="location"
+        android:paddingHorizontal="100dp"
+        android:text="Location"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</LinearLayout>

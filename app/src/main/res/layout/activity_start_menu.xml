@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartMenuActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="6"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:foregroundGravity="center_vertical"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/jalj"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here to continue "
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            android:padding="10dp"
+            android:onClick="mudarEcra"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

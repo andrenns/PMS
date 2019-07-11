@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/jal"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/jal" />
+
+    <EditText
+        android:id="@+id/name_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/name_create" />
+
+    <EditText
+        android:id="@+id/location_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_create"
+        android:layout_centerHorizontal="true"
+        android:hint="Location"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/location_create" />
+
+    <EditText
+        android:id="@+id/age_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_create"
+        android:layout_centerHorizontal="true"
+        android:hint="Age"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/age_create" />
+
+    <EditText
+        android:id="@+id/username_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age_create"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/username_create" />
+
+    <EditText
+        android:id="@+id/password_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_create"
+    android:layout_centerHorizontal="true"
+    android:hint="Password"
+        android:inputType="textPassword"
+    android:textAlignment="center"
+    android:textColor="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/password_create" />
+
+    <EditText
+        android:id="@+id/confirm_password_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_create"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/button"
+        android:onClick="createAccount"
+        android:text="       Create       "
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

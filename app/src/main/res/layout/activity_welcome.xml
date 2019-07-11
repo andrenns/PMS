@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/jal"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/welcome_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/nome_utilizador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_user"
+        android:text="User"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorGrey"
+        />
+    <Button
+        android:id="@+id/avanca"
+        android:onClick="menuPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"/>
+
+
+
+
+
+
+
+</RelativeLayout>

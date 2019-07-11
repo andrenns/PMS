@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".connectActivity"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/link"
+        android:paddingHorizontal="100dp"
+        android:text="Turn on Gopro"
+        android:textColor="@android:color/white"
+        android:onClick="turnON"/>
+
+    <Button
+        android:id="@+id/take_photo"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/outline_photo_camera"
+        android:paddingHorizontal="100dp"
+        android:text="Take Photo"
+        android:textColor="@android:color/white"
+        android:onClick="takePhoto"/>
+
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/unlink"
+        android:paddingHorizontal="100dp"
+        android:text="Turn off Gopro"
+        android:textColor="@android:color/white"
+        android:onClick="turnOFF"/>
+
+    <Button
+        android:id="@+id/photo_mode"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/outline_photo_white"
+        android:paddingHorizontal="100dp"
+        android:text="Photo Mode"
+        android:textColor="@android:color/white"
+        android:onClick="photoMode"/>
+
+</LinearLayout>
